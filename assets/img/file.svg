@@ -1,0 +1,14 @@
+<svg width="18.000000000000004" height="23" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="25" width="20" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.7" stroke="#303030" fill="none" id="svg_2" d="m15.12337,21.487678l-5.96166,-8.79194c-0.19733,-0.29102 -0.62609,-0.29102 -0.82342,0l-5.96166,8.79194c-0.27508,0.40568 -0.90915,0.21098 -0.90915,-0.27917l0,-19.36238c0,-0.27473 0.22271,-0.49744 0.49744,-0.49744l13.57016,0c0.27473,0 0.49744,0.22271 0.49744,0.49744l0,19.36238c0,0.49015 -0.63407,0.68485 -0.90915,0.27917z" class="st1"/>
+  <line stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.7" stroke="#303030" fill="none" id="svg_4" y2="3.654998" y1="3.654998" x2="8.94888" x1="3.91389" class="st1"/>
+  <line stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.7" stroke="#303030" fill="none" id="svg_5" y2="3.654998" y1="3.654998" x2="11.3405" x1="10.29154" class="st1"/>
+  <path stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.7" stroke="#303030" fill="none" id="svg_6" d="m15.12337,21.487678l-5.96166,-8.79194c-0.19733,-0.29102 -0.62609,-0.29102 -0.82342,0l-5.96166,8.79194c-0.27508,0.40568 -0.90915,0.21098 -0.90915,-0.27917l0,-19.36238c0,-0.27473 0.22271,-0.49744 0.49744,-0.49744l13.57016,0c0.27473,0 0.49744,0.22271 0.49744,0.49744l0,19.36238c0,0.49015 -0.63407,0.68485 -0.90915,0.27917z" class="st1"/>
+ </g>
+</svg>

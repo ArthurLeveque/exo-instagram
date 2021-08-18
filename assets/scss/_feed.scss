@@ -1,0 +1,399 @@
+#main-feed{
+    width: 100%;
+    padding: 55px 0;
+}
+
+#stories{
+    background: white;
+    padding: 10px 12px;
+    white-space: nowrap;
+    border-bottom: 1px solid $light-grey;
+    overflow: hidden;
+
+    .story{
+        display: inline-block;
+        margin-right: 17px;
+        text-decoration: none;
+        color: $black;
+
+        .frame{
+            position: relative;
+            width: 67px;
+            height: 67px;
+            background: linear-gradient(200deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 68%, rgba(252,176,69,1) 88%);
+            border-radius: 50%;
+            margin-bottom: 10px;
+            z-index: 1;
+
+            .picture{
+                position: absolute;
+                width: 57px;
+                height: 57px;
+                top: calc(50% - 28.5px);
+                left: calc(50% - 28.5px);
+                border-radius: 50%;
+                background: $black;
+                z-index: 3;
+            }
+
+            .white-circle{
+                position: absolute;
+                width: 62px;
+                height: 62px;
+                top: calc(50% - 31px);
+                left: calc(50% - 31px);
+                border-radius: 50%;
+                background: white;
+                z-index: 2; 
+            }
+        }
+
+        p{
+            font-size: 12px;   
+            text-align: center;
+        }
+    }
+
+    #your-story{
+        color: $grey;
+
+        .frame{
+            background: $light-grey;
+        }
+
+        .white-circle{
+            width: 65px;
+            height: 65px;
+            top: calc(50% - 32.5px);
+            left: calc(50% - 32.5px);
+        }
+    }
+
+    .live .frame{
+        background: $purple;
+
+        .picture{
+            width: 47px;
+            height: 47px;
+            top: calc(50% - 23.5px);
+            left: calc(50% - 23.5px);
+            background: $purple;
+        }
+
+        .live-status{
+            position: absolute;
+            bottom: -6.3px; // 1/3 de la hauteur du cadre
+            left: calc(50% - 15.67px); // moitié largeur cadre
+            text-transform: uppercase;
+            color: white;
+            font-size: 8px;
+            padding: 3px 5px;
+            background: $purple;
+            border-radius: 3px;
+            border: 2px solid white;
+            z-index: 4;
+        }
+    }
+}
+
+.post{
+    background: white;
+    font-size: 13px;
+    .post-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 10px 12px;
+
+        .post-publisher{
+            display: flex;
+            align-items: center;
+
+            text-decoration: none;
+            color: $black;
+
+            .post-frame{
+                position: relative;
+                width: 40px;
+                height: 40px;
+                background: linear-gradient(200deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 68%, rgba(252,176,69,1) 88%);
+                border-radius: 50%;
+                z-index: 1;
+                margin-right: 7px;
+    
+                .post-profile-picture{
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    top: calc(50% - 16px);
+                    left: calc(50% - 16px);
+                    border-radius: 50%;
+                    background: $black;
+                    z-index: 3;
+                }
+    
+                .post-white-circle{
+                    position: absolute;
+                    width: 35px;
+                    height: 35px;
+                    top: calc(50% - 17.5px);
+                    left: calc(50% - 17.5px);
+                    border-radius: 50%;
+                    background: white;
+                    z-index: 2; 
+                }
+            }
+
+            .post-profile{
+                p:first-child{
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .post-more{
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    .post-picture .display-picture{
+        width: 100%;
+        padding-bottom: 100%;
+        background: $black;
+        background-position: center;
+        background-size: cover;
+        // background-image: url('../img/test.png');
+    }
+
+    .post-bot{
+        display: flex;
+        flex-direction: column;
+
+        padding: 10px 12px;
+
+        .post-buttons{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            .post-buttons-left{
+                a{
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .post-likes{
+            text-decoration: none;
+            color: $black;
+            font-weight: bold;
+            margin-bottom: 13px;
+        }
+
+        .post-comment{
+            display: flex;
+            margin-bottom: 8px;
+
+            .comment-username{
+                text-decoration: none;
+                color: $black;
+                font-weight: bold; 
+                margin-right: 5px;
+            }
+
+            .hashtag{
+                text-decoration: none;
+                color: #234B79;
+            }
+        }
+
+        .post-infos{
+            padding-left: 2px;
+            text-transform: uppercase;
+            font-size: 11px;
+
+            p{
+                color: #B6B6B7;
+
+                a{
+                    text-decoration: none;
+                    color: $black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// ------------------VERSION DESKTOP------------------
+
+@media screen and (min-width : #{$medium}) {
+    #main-feed{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #main-left{
+        width: 600px;
+    }
+
+    #stories, .post{
+        border: 1px solid $light-grey;
+        -moz-box-shadow: 0px 1px 2px 0px #E5E5E5;
+        -webkit-box-shadow: 0px 1px 2px 0px #E5E5E5;
+        -o-box-shadow: 0px 1px 2px 0px #E5E5E5;
+        box-shadow: 0px 1px 2px 0px #E5E5E5;
+    }
+
+    #stories{     
+        margin-bottom: 24px;
+    }
+
+    .post{
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width : #{$large}) {
+    #main-feed{
+        justify-content: space-between;
+
+        width: 1000px;
+        margin: 30px auto 0 auto;
+    }  
+
+    #main-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        width: 300px;
+        margin-top: 20px;
+    
+        #right-profile{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            width: 100%;
+    
+            #right-organisation-profile{
+                display: flex;
+                justify-content: flex-start;
+    
+                img{
+                    width: 57px;
+                    height: 57px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+    
+                #right-names{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    #right-pseudo{
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $black;
+                    }
+                    #right-title{
+                        font-size: 14px;
+                        color: $grey;
+                    }
+                }
+            }
+    
+            a{
+                text-decoration: none;
+                color: $light-blue;
+                font-size: 12px; 
+            }
+        }
+    
+        #right-to-suggestions{
+            display: flex;
+            justify-content: space-between;
+    
+            width: 100%;
+            margin-top: 25px;
+    
+            p{
+                color: $grey;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            a{
+                color: $black;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+    
+        #right-suggestions{
+            width: 100%;
+            padding: 8px 0;
+
+            .right-suggestion{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        
+                padding: 8px 5px;
+
+                .right-organisation-suggestion{
+                    display: flex;
+                    justify-content: flex-start;
+        
+                    .suggestion-pp{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        background-color: $black;
+                    }
+
+                    .suggestion-infos{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+        
+                        .suggestion-pseudo{
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: $black;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .suggestion-followers{
+                            font-size: 12px;
+                            color: $grey;
+                        }
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $light-blue;
+                    font-size: 12px; 
+                }
+            }
+        }
+
+        #right-links, #right-links a, #privacy{
+            font-size: 11px;
+            color: #C7C7C7;
+            text-decoration: none;
+        }
+
+        #right-links{
+            padding: 20px 0;
+        }
+    }
+}
